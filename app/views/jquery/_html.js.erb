@@ -1,0 +1,6 @@
+$('#<%= id %>').html("<%= escape_javascript( content )%>"); 
+$('#notice').html("<%= escape_javascript(notice)%>");
+$('#notice').addClass("alert");
+$('#notice').addClass("alert-info");
+
+setTimeout(function(){$('#notice').html("");$('#notice').removeClass("alert");},3000);
