@@ -29,9 +29,9 @@ module JqueryResponses
     module LocalInstanceMethods
       def jq_id
         if self.persisted?
-          self.class.to_s.gsub(":","_") + "_#" + self.id.to_s
+          self.class.to_s.gsub(":","_") + "_" + self.id.to_s
         else
-          self.class.to_s.gsub(":","_") + "_#" + "new"
+          self.class.to_s.gsub(":","_") + "_" + "new"
         end
       end
     end
